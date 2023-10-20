@@ -4,9 +4,9 @@ from collections import deque
 N = int(input())
 M = int(input())
 graph = [[] for _ in range(N+1)]
-indegree = [0]*(N+1)
-outdegree = [0]*(N+1)
-arr = [0]*(N+1)
+indegree = [0]*(N+1)  # 진입차수
+outdegree = [0]*(N+1)  # 진출차수
+arr = [0]*(N+1)  # 필요한 부품 개수
 
 for _ in range(M):
     # X를 만드는데 Y가 K개 필요
