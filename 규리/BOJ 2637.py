@@ -11,7 +11,7 @@ arr = [0]*(N+1)  # 필요한 부품 개수
 for _ in range(M):
     # X를 만드는데 Y가 K개 필요
     X, Y, K = map(int, input().split())
-    graph[X].append((Y, K))
+    graph[X].append((Y, K))  # X를 만드는데 필요한 부품번호Y와 개수K 담기
     indegree[X] += 1
     outdegree[Y] += 1
 
